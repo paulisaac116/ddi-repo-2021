@@ -1,0 +1,169 @@
+:root {
+    --white: #ffffff;
+    --soft-orange: #ff7f00;
+    --soft-gray: #f1eded;
+    --dark-gray: #666666;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #555555;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'Roboto', sans-serif;
+}
+
+.content-width {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/**     HEADER      */
+
+header {
+    margin-top: 25px;
+}
+
+header h1 a {
+    color: var(--white);
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 2.4rem;
+}
+
+header h2 {
+    color: var(--soft-gray);
+    font-weight: 500;
+}
+
+
+/**     MAIN SECTION        */
+
+section {
+    margin-top: 20px;
+}
+
+.nav-bar ul {
+    display: flex;
+    background: rgb(255, 127, 0);
+    background: linear-gradient(180deg, rgba(255, 127, 0, 1) 0%, rgba(255, 181, 90, 1) 100%);
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+
+.nav-bar ul li a {
+    display: inline-block;
+    color: var(--white);
+    padding: 10px 20px;
+}
+
+.nav-bar ul li a:hover {
+    background-color: rgba(255, 128, 0, 0.842);
+    color: rgb(37, 37, 37);
+}
+
+.main-section {
+    background-color: var(--white);
+    padding: 20px 20px;
+    display: grid;
+    /* grid-template-columns: 80% 20%; */
+    grid-template-columns: 5fr 1fr;
+    column-gap: 50px;
+}
+
+.main-section h2 {
+    color: var(--soft-orange);
+    font-size: 2.4rem;
+    font-weight: 500;
+    text-decoration: underline;
+    margin-top: 10px;
+}
+
+.main-content p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+    line-height: 1.8;
+    text-align: justify;
+}
+
+.main-content img {
+    margin: 20px auto;
+}
+
+
+/**     SIDE-BAR    */
+
+.side-bar {
+    position: relative;
+    width: fit-content;
+}
+
+.top-bar::before {
+    content: "";
+    width: 1.5px;
+    height: 500px;
+    background-color: #bbb;
+    position: absolute;
+    top: 1px;
+    left: -14px;
+}
+
+.side-bar p {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--dark-gray);
+    margin-bottom: 14px;
+}
+
+.side-bar ul li a {
+    display: inline-block;
+    font-size: 1.2rem;
+    color: var(--soft-orange);
+    margin: auto auto 8px 10px;
+    font-weight: 500;
+}
+
+.side-bar ul li a:hover {
+    text-decoration: underline;
+}
+
+.side-bar .top-bar {
+    margin-top: 10px;
+}
+
+.side-bar .bottom-bar {
+    margin-top: 30px;
+}
+
+
+/**     FOOTER      */
+
+footer {
+    text-align: center;
+    padding: 10px 1px;
+}
+
+footer p {
+    color: var(--white);
+}
+
+footer p a {
+    color: var(--soft-orange);
+    text-decoration: underline;
+}
